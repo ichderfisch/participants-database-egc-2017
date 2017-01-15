@@ -21,6 +21,18 @@
  ?>
 <div class="wrap <?php echo $this->wrap_class ?>" >
 
+  Find your EGD ID:
+  <label>
+    First name
+    <input id="egd-first-name" />
+  </label>
+  <label>
+    Last name
+    <input id="egd-last-name" />
+  </label>
+  <button id="egd-find-id">Search</button>
+  <ul id="egd-search-results"></ul>
+
   <?php // output any validation errors
   $this->print_errors(); ?>
   <?php $this->print_form_head(); // this must be included before any fields are output. hidden fields may be added here as an array argument to the function ?>
