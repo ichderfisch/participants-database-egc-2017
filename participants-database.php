@@ -493,6 +493,7 @@ class Participants_Db extends PDb_Base {
     wp_register_script( self::$prefix . 'list-filter', plugins_url( 'js/list-filter.js', __FILE__ ), array('jquery') );
     wp_register_script( self::$prefix . 'jq-placeholder', plugins_url( 'js/jquery.placeholder.min.js', __FILE__ ), array('jquery') );
     wp_register_script( self::$prefix . 'otherselect', plugins_url( 'js/otherselect.js', __FILE__ ), array('jquery') );
+    wp_register_script( self::$prefix . 'egd', plugins_url( 'js/egd.js', __FILE__ ), array('jquery') );
   }
 
   /**
@@ -635,6 +636,7 @@ class Participants_Db extends PDb_Base {
     wp_enqueue_script( self::$prefix . 'shortcode' );
     wp_enqueue_script( self::$prefix . 'jq-placeholder' );
     wp_enqueue_script( self::$prefix . 'otherselect' );
+    wp_enqueue_script( self::$prefix . 'egd' );
   }
 
   /**
