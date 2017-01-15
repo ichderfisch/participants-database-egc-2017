@@ -15,12 +15,15 @@ jQuery(document).ready( function($) {
     var list = $(w.find('#egd-search-results')[0]);
     var egdFName = w.find('#egd-first-name')[0];
     var egdLName = w.find('#egd-last-name')[0];
+    var spinner = $(w.find('#edg-spinner')[0]);
     function search() {
+      spinner.show();
       $.getJSON(
         url,
         { name: egdFName.value, lastname: egdLName.value },
         function(result) {
           list.empty();
+          spinner.hide();
           $.each(result.players, function(i, player) {
             var text = player.Pin_Player + ', ';
             text += player.Real_Name + ' ' + player.Real_Last_Name + ', ';

@@ -31,6 +31,11 @@
     <input id="egd-last-name" />
   </label>
   <button id="egd-find-id">Search</button>
+  <img
+    id="edg-spinner"
+    src="http://localhost/wp-includes/images/spinner-2x.gif"
+    style="display: none;"
+  />
   <ul id="egd-search-results"></ul>
 
   <?php // output any validation errors
