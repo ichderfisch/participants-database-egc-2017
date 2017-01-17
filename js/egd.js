@@ -22,7 +22,7 @@ jQuery(document).ready( function($) {
         url,
         { name: egdFName.value, lastname: egdLName.value },
         function(result) {
-          list.empty();
+          list.empty().show();
           spinner.hide();
           $.each(result.players, function(i, player) {
             var text = player.Pin_Player + ', ';
@@ -31,7 +31,7 @@ jQuery(document).ready( function($) {
             text += player.Club + ' ' + player.Country_Code;
             var li = $('<button>').text(text);
             li.appendTo(list);
-            li.click(function() { autoFill(player); });
+            li.click(function() { autoFill(player); list.hide(); });
           });
         }
       );
