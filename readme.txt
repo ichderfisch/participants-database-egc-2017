@@ -1,3 +1,13 @@
+# About
+
+This is a modified version of the Participants Database WP plugin suited for use
+on the EGC 2017 website (http;//www.egc2017.eu/).
+It is based on the zip version 1.7.1.4 that was available for download on the WP
+website.
+
+Below is the original readme.
+
+
 === Participants Database ===
 Contributors: xnau
 Donate link: https://xnau.com/wordpress-plugins/participants-database
