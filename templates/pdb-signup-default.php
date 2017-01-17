@@ -21,21 +21,19 @@
  ?>
 <div class="wrap <?php echo $this->wrap_class ?>" >
 
-  Find your EGD ID:
-  <label>
-    First name
-    <input id="egd-first-name" />
-  </label>
-  <label>
-    Last name
-    <input id="egd-last-name" />
-  </label>
-  <button id="egd-find-id">Search</button>
-  <img
-    id="edg-spinner"
-    src="http://localhost/wp-includes/images/spinner-2x.gif"
-    style="display: none;"
-  />
+  <div class="egd-search">
+    <span class="egd-search__helper">Find your EGD ID:</span>
+    <label class="egd-search__input">
+      First name
+      <input id="egd-first-name" />
+    </label>
+    <label class="egd-search__input">
+      Last name
+      <input id="egd-last-name" />
+    </label>
+    <button id="egd-find-id">Search</button>
+    <img id="edg-spinner" src="http://localhost/wp-includes/images/spinner-2x.gif" style="display: none;" />
+  </div>
   <ul id="egd-search-results"></ul>
 
   <?php // output any validation errors

@@ -1,0 +1,59 @@
+.egd-search {
+  background-color: #f6f6f6;
+  border: 1px solid #88b04b;
+  padding: 2em 1em;
+}
+
+/*
+.egd-search__input {
+    vertical-align: middle
+}
+
+.egd-search__input input {
+    padding: 9px 20px;
+    line-height: 14px;
+    font-size: 12px;
+}
+*/
+input.pdb-submit {
+    border: 0;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: "PT Sans";
+    background-color: #88b04b;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 7px 14px;
+}
+
+.pdb-signup input[type=text],
+.pdb-signup input[type=date],
+.pdb-signup textarea,
+.pdb-signup select    {
+    color: #172320;
+    background-color: #fff
+}
+
+.pdb-signup .text-line td,
+.pdb-signup .dropdown td,
+.pdb-signup .date td,
+.pdb-signup .multi-checkbox td  {
+    line-height: 2em;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    height: 2.5em
+}
+
+.pdb-signup th {
+    vertical-align: top;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    height: 2.5em;
+    width: 30%
+}
+
+.pdb-signup .helptext{
+    font-size: 0.8em;
+    color: #888;
+    line-height: 1.5em;
+}
