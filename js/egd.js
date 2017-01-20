@@ -29,7 +29,7 @@ jQuery(document).ready( function($) {
             text += player.Real_Name + ' ' + player.Real_Last_Name + ', ';
             text += player.Grade + ', ';
             text += player.Club + ' ' + player.Country_Code;
-            var li = $('<button>').text(text);
+            var li = $('<button class="egd-search-results__player">').text(text);
             li.appendTo(list);
             li.click(function() { autoFill(player); list.hide(); });
           });

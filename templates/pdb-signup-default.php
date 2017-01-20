@@ -20,19 +20,16 @@
  */
  ?>
 <div class="wrap <?php echo $this->wrap_class ?>" >
-
   <div class="egd-search">
-    <span class="egd-search__helper">Find your EGD ID:</span>
-    <label class="egd-search__input">
-      First name
-      <input id="egd-first-name" />
-    </label>
-    <label class="egd-search__input">
-      Last name
-      <input id="egd-last-name" />
-    </label>
-    <button id="egd-find-id">Search</button>
-    <img id="edg-spinner" src="http://localhost/wp-includes/images/spinner-2x.gif" style="display: none;" />
+    <div class="egd-search__form">
+      <span class="egd-search__helper">Find your EGD ID:</span>
+      <label class="egd-search__label visually-hidden" for="egd-first-name">First name</label>
+      <input class="egd-search__input" id="egd-first-name" placeholder="First name"/>
+      <label class="egd-search__label visually-hidden" for="egd-last-name">Last name</label>
+      <input class="egd-search__input" id="egd-last-name" placeholder="Last Name"/>
+      <button id="egd-find-id" class="fusion-button button-default button-small">Search</button>
+      <img id="edg-spinner" src="http://localhost/wp-includes/images/spinner-2x.gif" style="display: none;" />
+    </div>
   </div>
   <ul id="egd-search-results"></ul>
 
